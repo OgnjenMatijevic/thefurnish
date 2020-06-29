@@ -1,0 +1,989 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.clean-transition * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
+
+@media (max-width: 370px) {
+  main {
+    padding-top: 66px !important;
+  }
+}
+
+.content-container {
+  max-width: 1460px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1640px) {
+  .content-container {
+    max-width: 1460px;
+  }
+
+  .hero .hero-chair {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 1460px) {
+  .content-container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content-container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 990px) {
+  .content-container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 760px) {
+  .content-container {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 580px) {
+  .content-container {
+    max-width: 100%;
+  }
+}
+
+.section-title {
+  font-family: "Poppins";
+  font-size: 35px;
+  color: #707070;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 81px;
+}
+
+.section-title .bold-span {
+  font-weight: 600;
+  font-style: italic;
+  color: #000;
+}
+
+
+body {
+  font-family: "Raleway", "Poppins", sans-serif;
+}
+
+main {
+  padding-top: 75px;
+}
+
+
+/* nav bar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 60;
+}
+
+
+nav .content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+nav .nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  max-width: 231px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+nav .content-container a {
+  text-decoration: none;
+}
+
+nav .nav-list a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #707070;
+}
+
+.nav-list a:hover {
+  color: #000000;
+}
+
+
+nav .logo {
+  font-family: "Poppins";
+  font-size: 24px;
+  color: #000000;
+}
+
+/* nav responsive */
+@media (max-width: 580px) {
+  nav .content-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav .logo {
+    font-size: 18px;
+  }
+
+  nav .nav-list a {
+    font-size: 13px;
+  }
+
+  nav .nav-list {
+    max-width: 175px;
+  }
+
+}
+
+.hero {
+  background: #EBD9D9;
+  height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .hero-chair {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+}
+
+.hero .purpose {
+  font-size: 20px;
+  font-weight: 400;
+  color: #404040;
+  font-family: "Poppins";
+  padding-bottom: 5px;
+}
+
+
+.hero .name {
+  font-size: 35px;
+  font-weight: 800;
+  padding-bottom: 23px;
+
+}
+
+.hero .price {
+  font-size: 24px;
+  padding-bottom: 66px;
+}
+
+.hero .buy-btn {
+  font-size: 22px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+  background: #fff;
+  display: inline-block;
+  padding: 15px 80px;
+  border-radius: 80px;
+  opacity: 0.8;
+  box-shadow: 0px 2px 12px -6px #707070;
+}
+
+.hero .content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100%;
+  position: relative;
+}
+
+.hero .furniture-about {
+  position: absolute;
+  left: 0;
+  bottom: 16%;
+}
+
+.hero .slide-bar__wrap {
+  display: flex;
+  align-items: center;
+  width: 296px;
+  justify-content: space-between;
+  position: absolute;
+  right: 0;
+  bottom: 16%;
+}
+
+.slide-bar__wrap .slide-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+}
+
+.slide-bar__wrap .slide-bar .slider {
+  width: 20px;
+  height: 3px;
+  background: #FFFFFF;
+  border-radius: 80px;
+  padding: 2px 4px;
+  opacity: 0.8;
+}
+
+.slide-bar__wrap .slide-bar .current {
+  background: #404040;
+  opacity: 1;
+}
+
+.slide-bar .slider:hover {
+  opacity: 1;
+  background: #404040;
+}
+
+
+.slide-bar__wrap img {
+  padding: 20px;
+  background: #fff;
+  display: block;
+  border-radius: 50%;
+  max-width: 50px;
+}
+
+@media (max-width: 370px) {
+  nav .logo {
+    font-size: 13px;
+  }
+
+  nav .nav-list a img {
+    display: block;
+    width: 20px;
+  }
+}
+
+
+/* hero responsive */
+@media (max-width: 1200px) {
+  .hero .furniture-about {
+    bottom: 4%;
+  }
+
+  .hero .slide-bar__wrap {
+    bottom: 5%;
+  }
+
+  .hero .price {
+    padding-bottom: 30px;
+  }
+
+  .hero .hero-chair {
+    top: 48%;
+  }
+
+  .hero .name {
+    font-size: 44px;
+    padding-bottom: 12px;
+  }
+
+  .hero .purpose {
+    padding: 0;
+  }
+
+  .hero .hero-chair {
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
+
+@media (max-width: 990px) {
+  .hero .hero-chair {
+    width: 550px;
+    top: 35%;
+  }
+
+  .hero .furniture-about {
+    padding-top: 25px;
+    width: 100%;
+  }
+
+  .slide-bar__wrap .slide-bar .slider {
+    width: 17px;
+    height: 3px;
+    border-radius: 80px;
+    padding: 2px 4px;
+    opacity: 0.8;
+  }
+
+  .slide-bar__wrap .slide-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 140px;
+  }
+
+  .hero .slide-bar__wrap {
+    width: 250px;
+    bottom: 8%;
+  }
+
+  .slide-bar__wrap img {
+    padding: 15px;
+    width: 41px;
+  }
+
+  .hero .slide-bar__wrap {
+    bottom: 21%;
+    right: 50%;
+    transform: translate(50%) scale(0.9);
+  }
+
+  .hero .buy-btn {
+    font-size: 16px;
+    padding: 16px 75px;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero .hero-chair {
+    top: 37%;
+    max-width: 460px;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  /* .hero .furniture-about {
+    padding-top: 25px;
+    width: 100%;
+    border-top: 1px solid #404040;
+    bottom: 8%;
+  } */
+
+  .hero .furniture-about {
+    padding-top: 25px;
+    width: 100%;
+    bottom: 4%;
+  }
+
+  .hero .slide-bar__wrap {
+    bottom: 32%;
+  }
+
+  .hero .slide-bar__wrap {
+    bottom: 5%;
+    right: 23%;
+  }
+
+  .hero .purpose {
+    font-size: 17px;
+  }
+
+  .hero .name {
+    font-size: 37px;
+    padding-bottom: 0;
+  }
+
+}
+
+@media (max-width: 580px) {
+  .content-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+  .hero .furniture-about {
+    position: unset;
+    padding-bottom: 44px;
+  }
+
+  .hero .slide-bar__wrap {
+    bottom: 8%;
+    right: 29%;
+    transform: translate(50%) scale(0.8);
+  }
+
+  .hero .purpose {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 475px) {
+  .hero .buy-btn {
+    padding: 12px 55px;
+    font-size: 16px;
+  }
+
+  .hero .hero-chair {
+    top: 29%;
+    width: 300px;
+  }
+
+  .hero .price {
+    padding-bottom: 15px;
+  }
+
+  .hero .name {
+    font-size: 32px;
+    padding-bottom: 5px;
+  }
+
+  .hero .purpose {
+    font-size: 17px;
+  }
+
+  .hero .slide-bar__wrap {
+    width: 181px;
+    bottom: 40%;
+  }
+
+  .slide-bar__wrap img {
+    padding: 20px;
+    background: #fff;
+    display: block;
+    border-radius: 50%;
+    max-width: 50px;
+  }
+
+  .slide-bar__wrap .slide-bar {
+    width: 110px;
+  }
+
+  .hero .slide-bar__wrap {
+    right: 50%;
+    transform: translate(50%) scale(1.08);
+  }
+
+  .hero .slide-bar__wrap {
+    width: 201px;
+    bottom: 40%;
+  }
+
+  .slide-bar__wrap img {
+    padding: 11px;
+    width: 34px;
+}
+}
+
+
+/* lean too far */
+
+.chair-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.sofa-title {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+
+.furniture-grid .furniture {
+  background: #F5F5F5;
+}
+
+.furniture-grid .leifarne {
+  background: #ADD4FF;
+}
+
+.furniture-grid .gronlid {
+  background: #EBD9D9;
+}
+
+.furniture-grid .vejmond {
+  background: #E6E2F0;
+}
+
+
+.furniture-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 16px;
+  column-gap: 16px;
+  width: 100%;
+}
+
+.furniture-grid .gronlid {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.furniture-grid .vejmond {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.furniture-grid .furniture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 640px;
+  height: 100%;
+  transition: background 0.8s ease-out;
+}
+
+.furniture-grid .sofa {
+  min-height: 640px;
+}
+
+
+.furniture .item {
+  transition: transform 0.4s ease-out;
+}
+
+.furniture:hover .item {
+  transform: scale(1.1);
+}
+
+.furniture-grid .chair-title {
+  top: 13%;
+  transition: 0.3s ease-out;
+  transition-property: color, font-size;
+  position: absolute;
+}
+
+.furniture-grid .sofa-title {
+  top: 13%;
+  left: 13%;
+  transition: 0.3s ease-out;
+  transition-property:  color, font-size;
+  position: absolute;
+}
+
+.furniture:hover .sofa-title,
+.furniture:hover .chair-title {
+  font-size: 27px;
+}
+
+.furniture .more-info__btn img {
+  transition: transform 0.2s ease-out;
+}
+
+.more-info__btn:hover img {
+  transform: translateX(3px);
+}
+
+.furniture .more-info__btn .btn-circle {
+  transition-property: opacity, background;
+}
+
+.furniture .more-info__btn:hover .btn-circle {
+  opacity: 0.7;
+}
+
+.furniture:hover h4 {
+  color: #ffffff;
+}
+
+.colored:hover h4 {
+  color: #B0D5D8;
+}
+
+.leifarne:hover h4 {
+  color: #fff;
+}
+
+.furniture:hover {
+  background: #ADD4FF;
+}
+
+.vejmond:hover {
+  background: #F5F5F5;
+}
+
+.vejmond:hover .sofa-title {
+  color: #f3cdcd;
+}
+
+.gronlid:hover {
+  background: #F5F5F5;
+}
+
+.furniture-grid .more-info__btn {
+  font-size: 17px;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+  position: absolute;
+  bottom: 11%;
+  transform: translateX(-8%);
+}
+
+.more-info__btn img {
+  padding-left: 10px;
+}
+
+.more-info__btn .btn-circle {
+  height: 64px;
+  width: 64px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateX(45%);
+  opacity: 0%;
+  transition: 0.8s ease-out;
+  transition-property:  background;
+}
+
+.furniture:hover .btn-circle {
+  opacity: 50%;
+}
+
+.vejmond:hover .btn-circle {
+  background: #f3cdcd;
+}
+
+.gronlid:hover .btn-circle {
+  background: #ADD4FF;
+}
+
+
+.more-info__btn .info {
+  z-index: 1;
+}
+
+.furniture-grid .sofa {
+  position: relative;
+}
+
+.furniture-grid .sofa-btn {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+
+
+.view-more__btn {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+  padding: 30px 108px;
+  display: inline-block;
+  background: #F5F5F5;
+  border-radius: 80px;
+  margin-top: 80px;
+  margin-bottom: 82px;
+  transition: 0.4s ease-in;
+  transition-property: background, color;
+}
+
+.view-more__btn:hover {
+  background: #B0D5D8;
+  color: #fff;
+}
+
+.lean-too-far .content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* lean too far responsive */
+@media (max-width: 1460px) {
+  .furniture-grid .sofa-title__wrap {
+    transform: translateX(0%);
+  }
+
+  .furniture-grid .sofa {
+    width: 500px;
+  }
+
+  .furniture-grid .furniture {
+    width: 100%;
+  }
+
+  /* .furniture-grid .sofa-title {
+    padding-bottom: 65px;
+  } */
+}
+
+
+@media (max-width: 1200px) {
+  .furniture-grid .sofa-img {
+    max-width: 560px;
+  }
+
+  .furniture h4 {
+    color: #ffffff;
+  }
+
+
+  .leifarne h4 {
+    color: #fff;
+  }
+
+  .gronlid {
+    background: #F5F5F5;
+  }
+
+  .furniture-grid .furniture {
+    background: #ADD4FF;
+  }
+
+  .furniture-grid .gronlid {
+    background: #EBD9D9;
+  }
+
+  .furniture-grid .vejmond {
+    background: #F5F5F5;
+  }
+
+  .furniture-grid .chair-title,
+  .furniture-grid .sofa-title {
+    color: #fff;
+  }
+
+  .furniture:hover .chair-title,
+  .furniture:hover .sofa-title {
+    color: #000;
+  }
+
+  .furniture:hover .more-info__btn .btn-circle {
+    background: #EBD9D9;
+  }
+
+  .more-info__btn .btn-circle {
+    opacity: 50%;
+  }
+
+  .furniture .ekebol,
+  .furniture .lallerod {
+    color: #fff;
+  }
+
+  .furniture:hover .ekebol,
+  .furniture:hover .lallerod {
+    color: #000;
+  }
+
+  .furniture:hover {
+    background: #F5F5F5;
+  }
+
+  .gronlid:hover .sofa-title {
+    color: #ADD4FF;
+  }
+
+  .gronlid:hover .more-info__btn .btn-circle {
+    background: #ADD4FF;
+  }
+
+  .vejmond .sofa-title {
+    color: #000;
+  }
+
+  .vejmond:hover .sofa-title {
+    color: #f3cdcd;
+  }
+
+  .furniture-grid .shell {
+    display: none;
+  }
+
+  .furniture-grid .vejmond {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .furniture-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 990px) {
+  .lean-too-far .furniture-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .furniture-grid .vejmond {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+  }
+
+  .furniture-grid .furniture {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .furniture-grid .sofa-title {
+    padding-bottom: 55px;
+  }
+
+  .furniture-grid .gronlid {
+    grid-row-start: 7;
+  }
+
+  .furniture-grid .leifarne {
+    grid-row-start: 5;
+  }
+
+  .furniture-grid .furniture {
+    height: 100%;
+  }
+
+  .furniture-grid .sofa {
+    min-height: 550px;
+  }
+
+  /* .furniture-grid .sofa-title {
+    position: unset;
+    align-self: flex-start;
+    padding-left: 50px;
+    padding-top: 40px;
+  } */
+
+  /* .furniture-grid .more-info__btn {
+    left: 10%;
+  }
+
+  .furniture-grid .sofa-btn {
+    right: 11%;
+  } */
+
+  .furniture-grid .chair-btn {
+    left: 10%;
+  }
+
+  .furniture-grid .shell {
+    display: flex;
+  }
+}
+
+@media (max-width: 760px) {
+  .furniture-grid .sofa-img {
+    max-width: 460px;
+  }
+
+  .furniture-grid .more-info__btn {
+    left: 10%;
+  }
+
+  .furniture-grid .sofa-btn {
+    left: 10%;
+    right: unset;
+  }
+}
+
+@media (max-width: 475px) {
+  .furniture-grid .sofa-img {
+    max-width: 330px;
+    width: 100%;
+  }
+
+  .furniture:hover .item {
+    transform: none;
+  }
+
+  .furniture-grid .chair-img {
+    max-width: 180px;
+  }
+
+  .furniture-grid .chair-title {
+    font-size: 22px;
+    padding-bottom: 25px;
+  }
+
+  .furniture-grid:hover .chair-title {
+    font-size: 24px;
+  }
+
+  .furniture-grid:hover .sofa-title {
+    font-size: 24px;
+  }
+
+  .furniture-grid .sofa-title {
+    font-size: 22px;
+    padding-bottom: 25px;
+  }
+
+  .furniture-grid .chair-title {
+    padding-top: 58px;
+    padding-bottom: 43px;
+  }
+
+  .furniture-grid .more-info__btn {
+    padding-bottom: 40px;
+  }
+
+  .furniture-grid .more-info__btn {
+    font-size: 14px;
+  }
+
+  .more-info__btn .btn-circle {
+    height: 50px;
+    width: 50px;
+    opacity: 55%;
+  }
+
+  .view-more__btn {
+    font-size: 13px;
+    padding: 20px 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .section-title {
+    font-size: 25px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .hero {
+    height: 91vh;
+  }
+
+  .furniture-grid .sofa {
+    min-height: 450px;
+  }
+
+  .furniture-grid .furniture {
+    min-height: 450px;
+  }
+
+  .furniture-grid .more-info__btn {
+    bottom: 10%;
+    padding-bottom: 0;
+  }
+
+  .furniture-grid .chair-title {
+    padding-bottom: 0;
+    padding-top: 0;
+    top: 12%;
+  }
+
+  .furniture-grid .sofa-btn {
+    right: unset;
+    left: 10%;
+  }
+
+  .furniture-grid .chair-img {
+    max-width: 215px;
+  }
+
+}

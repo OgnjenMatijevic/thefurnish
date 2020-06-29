@@ -1,0 +1,541 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.clean-transition * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
+@media (max-width: 370px) {
+  main {
+    padding-top: 66px !important;
+  }
+}
+
+.content-container {
+  max-width: 1460px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1640px) {
+  .content-container {
+    max-width: 1460px;
+  }
+}
+
+@media (max-width: 1460px) {
+  .content-container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content-container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 990px) {
+  .content-container {
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 760px) {
+  .content-container {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 580px) {
+  .content-container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.section-title {
+  font-family: "Poppins";
+  font-size: 35px;
+  color: #707070;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 81px;
+}
+
+.section-title .bold-span {
+  font-weight: 600;
+  font-style: italic;
+  color: #000;
+}
+
+
+body {
+  font-family: "Raleway", "Poppins", sans-serif;
+}
+
+main {
+  padding-top: 75px;
+}
+
+
+/* nav bar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 60;
+}
+
+
+nav .content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+nav .nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  max-width: 231px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+nav .content-container a {
+  text-decoration: none;
+}
+
+nav .nav-list a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #707070;
+}
+
+.nav-list a:hover {
+  color: #000000;
+}
+
+
+nav .logo {
+  font-family: "Poppins";
+  font-size: 24px;
+  color: #000000;
+}
+
+/* nav responsive */
+@media (max-width: 580px) {
+  nav .content-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  nav .logo {
+    font-size: 18px;
+  }
+
+  nav .nav-list a {
+    font-size: 13px;
+  }
+
+  nav .nav-list {
+    max-width: 175px;
+  }
+}
+
+@media (max-width: 370px) {
+  nav .logo {
+    font-size: 13px;
+  }
+
+  nav .nav-list a img {
+    display: block;
+    width: 20px;
+  }
+}
+
+
+/* product */
+
+.product .blue-bg {
+  background: #ADD4FF;
+  max-width: 60%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+.product .product-pathway {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: 337px;
+  justify-content: space-between;
+  /* top: 2%;
+  position: absolute; */
+  margin-top: 29px;
+  margin-bottom: 200px;
+}
+
+.product-pathway a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.product-pathway .current {
+  font-weight: 700;
+}
+
+
+.product-wrap .slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 264px;
+  max-width: 56px;
+  overflow: hidden;
+  /* position:absolute;
+  top: 25%; */
+  margin-bottom: 200px;
+}
+
+.slider img {
+  display: block;
+}
+
+.slider .scroll {
+  height: 24px;
+  background: #fff;
+  opacity: 30%;
+  width: 1px;
+  padding: 2px 2px;
+  border-radius: 80px;
+}
+
+.slider .scroll:hover {
+  opacity: 1;
+}
+
+.slider .scroll-wrap {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.scroll-wrap .current {
+  background: #000;
+  opacity: 1;
+}
+
+
+.product-info__wrap .purpose {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.product-info__wrap .name {
+  font-size: 35px;
+  font-weight: 800;
+  padding-top: 10px;
+  padding-bottom: 12px;
+}
+
+.product-info__wrap .price {
+  font-size: 24px;
+}
+
+.product .buy-btn {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+  background: #fff;
+  display: inline-block;
+  padding: 20px 104px;
+  border-radius: 80px;
+  opacity: 0.8;
+  box-shadow: 0px 2px 12px -6px #707070;
+}
+
+.product .content-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product .product-img {
+  position: absolute;
+  top: 12%;
+  left: 10%;
+  max-width: 720px;
+}
+
+.product .product-wrap {
+  width: 828px;
+  position: relative;
+}
+
+
+.product-info__wrap {
+  width: 828px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: absolute;
+  bottom: 10%;
+  left: 0; */
+}
+
+.product {
+  height: calc(100vh - 75px);
+  position: relative;
+}
+
+
+/* intro */
+
+.intro .text-image__wrap {
+  max-width: 430px;
+}
+
+.intro .intro-title {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 40px;
+}
+
+.intro .info-text {
+  font-weight: 400;
+  padding-bottom: 79px;
+}
+
+.intro .prod-info {
+  font-weight: 18px;
+  font-weight: 500;
+  padding-bottom: 40px;
+}
+
+.intro .info-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #404040;
+  margin-bottom: 24px;
+}
+
+
+
+.intro .details {
+  max-width: 276px;
+  width: 100%;
+  font-weight: 400;
+  list-style: none;
+  line-height: 1.5;
+}
+
+.intro {
+  color: #404040;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 480px;
+  font-family: "Poppins";
+}
+
+.intro .social-media img {
+  display: block;
+}
+
+.intro .social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 22px;
+  height: 95px;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.intro .lookbook {
+  padding-top: 15px;
+}
+
+/* product page responsive */
+@media (max-width: 1460px) {
+  .product .blue-bg {
+    max-width: 100%;
+    height: 880px;
+  }
+
+  .product .content-container {
+    flex-direction: column;
+    /* align-items: flex-start; */
+    padding-bottom: 70px;
+  }
+
+  .product .product-wrap {
+    margin-bottom: 120px;
+    width: 100%;
+  }
+
+  .product-wrap .product-info__wrap {
+    width: 100%;
+  }
+
+  .product .product-img {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .product {
+    height: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .product .product-img {
+    max-width: 550px;
+    top: 19%;
+  }
+
+  .product .content-container {
+    /* overflow: hidden; */
+    height: 100%;
+  }
+
+  .product .buy-btn {
+    padding: 15px 85px;
+    font-size: 17px;
+  }
+}
+
+
+@media (max-width: 580px) {
+  .product .content-container {
+    overflow: hidden;
+  }
+
+  .intro {
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    height: 720px;
+  }
+
+  .intro .text-image__wrap {
+    padding-bottom: 30px;
+  }
+
+  .intro .social-media {
+    flex-direction: row;
+    width: 110px;
+    max-width: unset;
+  }
+
+}
+
+
+@media (max-width: 475px) {
+  .product-info__wrap {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .product .product-pathway {
+    margin-bottom: 500px;
+  }
+
+  .product .slider {
+    display: none;
+  }
+
+  .product .product-img {
+    width: 450px;
+  }
+
+  .product .blue-bg {
+    height: 770px;
+  }
+
+  .product-info__wrap .purpose {
+    font-size: 16px;
+  }
+
+  .product-info__wrap .name {
+    font-size: 27px;
+  }
+
+  .product-info__wrap .price {
+    font-size: 22px;
+    padding-bottom: 10px;
+  }
+
+  .intro .lookbook {
+    display: none;
+  }
+
+  .intro .details {
+    text-align: end;
+  }
+
+  .intro .good-to-know {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro .good-to-know .title {
+    padding-bottom: 10px;
+  }
+
+  .good-to-know .details {
+    text-align: unset;
+  }
+
+  .good-to-know .details {
+    max-width: 100%;
+  }
+
+  .product .buy-btn {
+    padding: 11px 60px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 370px) {
+  .product-pathway a {
+    font-size: 12px;
+  }
+
+  .product-pathway .current {
+    font-weight: 600;
+  }
+
+  .product .product-pathway {
+    width: 100%;
+  }
+}
